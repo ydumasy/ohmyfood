@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: 120px;
+  background: #579e87;
+  color: #fdcb49;
+  display: flex;
+}
+.header__title {
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+/*# sourceMappingURL=style.css.map */

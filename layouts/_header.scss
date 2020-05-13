@@ -1,0 +1,12 @@
+.header {
+    height: 120px;
+    background: #579e87;
+    color: #fdcb49;
+    display: flex;
+    &__title {
+        margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+    }
+}
