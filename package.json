@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch style.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ydumasy/ohmyfood.git"
+  },
+  "author": "Yann Dumasy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ydumasy/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/ydumasy/ohmyfood#readme"
+}
