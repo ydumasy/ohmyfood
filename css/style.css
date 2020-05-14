@@ -6,6 +6,15 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.fa-music {
+  background: linear-gradient(to right, #f05160, #f6916a);
+  position: relative;
+}
+
 .header {
   height: 120px;
   background: #579e87;
@@ -36,6 +45,24 @@ body {
   font-weight: 500;
   font-size: 32px;
   padding: 20px;
+}
+
+.card {
+  height: 382px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__first {
+  background: #fcdfdb;
+  color: #3d1319;
+  font-family: "Devonshire", cursive;
+}
+.card__first h2 {
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,13 +3,13 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    background: #579e87;
+    background: $clr-header;
     display: flex;
     justify-content: space-between;
     align-items: center;
     & a {
         font-family: 'Montserrat', sans-serif;
-        color: #fdcb49;
+        color: $clr-header-txt;
         text-decoration: none;
         font-weight: 500;
         font-size: 32px;

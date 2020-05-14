@@ -1,7 +1,7 @@
 .header {
     height: 120px;
-    background: #579e87;
-    color: #fdcb49;
+    background: $clr-header;
+    color: $clr-header-txt;
     display: flex;
     &__title {
         margin: auto;
