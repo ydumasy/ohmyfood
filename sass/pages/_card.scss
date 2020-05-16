@@ -14,7 +14,49 @@
             text-transform: uppercase;
         }
     }
-    &__second {}
-    &__third {}
-    &__fourth {}
+    &__second {
+        & h1 {
+            background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        & h2 {
+            color: #c77412;
+        }
+    }
+    &__third {
+        & h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px!important;
+            background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        & h2 {
+            font-family: 'Kalam', cursive;
+            color: #0887fb;
+        }
+    }
+    &__fourth {
+        & h1 {
+            font-family: 'Kalam', cursive;
+            font-size: 26px!important;
+            background: linear-gradient(to right, #41963c, #cefea0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        & h2 {
+            font-family: 'Kalam', cursive;
+            color: #72bf56;
+        }
+    }
+    & h1 {
+        font-size: 24px;
+    }
+    & h2 {
+        font-size: 30px;
+    }
 }

@@ -1,4 +1,6 @@
 .fa-music {
     background: linear-gradient(to right, #f05160, #f6916a);
-    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

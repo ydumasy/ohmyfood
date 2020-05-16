@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-size: 12px;
 }
 
 body {
@@ -12,7 +13,9 @@ a {
 
 .fa-music {
   background: linear-gradient(to right, #f05160, #f6916a);
-  position: relative;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .header {
@@ -63,6 +66,45 @@ a {
 .card__first h2 {
   font-family: "Kalam", cursive;
   text-transform: uppercase;
+}
+.card__second h1 {
+  background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.card__second h2 {
+  color: #c77412;
+}
+.card__third h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 28px !important;
+  background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.card__third h2 {
+  font-family: "Kalam", cursive;
+  color: #0887fb;
+}
+.card__fourth h1 {
+  font-family: "Kalam", cursive;
+  font-size: 26px !important;
+  background: linear-gradient(to right, #41963c, #cefea0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.card__fourth h2 {
+  font-family: "Kalam", cursive;
+  color: #72bf56;
+}
+.card h1 {
+  font-size: 24px;
+}
+.card h2 {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
