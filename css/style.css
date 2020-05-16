@@ -18,8 +18,25 @@ a {
   color: transparent;
 }
 
+button {
+  position: absolute;
+  bottom: 15vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  border: none;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  background: #579e87;
+  color: #fdcb49;
+  padding: 15px 65px;
+}
+
 .header {
   height: 120px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   background: #579e87;
   color: #fdcb49;
   display: flex;
@@ -41,13 +58,22 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.footer a {
+.footer p {
   font-family: "Montserrat", sans-serif;
   color: #fdcb49;
   text-decoration: none;
   font-weight: 500;
   font-size: 32px;
   padding: 20px;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
 
 .card {
@@ -57,11 +83,16 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 15px #d4d4d4;
+  transform: translateY(-10%);
 }
 .card__first {
   background: #fcdfdb;
   color: #3d1319;
+}
+.card__first h1 {
   font-family: "Devonshire", cursive;
+  margin: 5px;
 }
 .card__first h2 {
   font-family: "Kalam", cursive;
@@ -102,6 +133,7 @@ a {
 }
 .card h1 {
   font-size: 24px;
+  margin: 0;
 }
 .card h2 {
   font-size: 30px;
