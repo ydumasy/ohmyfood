@@ -1,15 +1,6 @@
 .header {
-    height: 120px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    background: $clr-header;
-    color: $clr-header-txt;
-    display: flex;
+    @include header;
     &__title {
-        margin: auto;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 48px;
+        @include header-title;
     }
 }

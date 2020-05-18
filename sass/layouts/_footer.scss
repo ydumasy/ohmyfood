@@ -1,18 +1,6 @@
 .footer {
-    height: 70px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background: $clr-header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include footer;
     & p {
-        font-family: 'Montserrat', sans-serif;
-        color: $clr-header-txt;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 32px;
-        padding: 20px;
+        @include footer-p;
     }
 }
