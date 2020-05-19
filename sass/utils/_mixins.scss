@@ -2,6 +2,7 @@
     height: 120px;
     width: 100%;
     position: fixed;
+    top: 0;
     z-index: 1;
     background: $clr-header;
     color: $clr-header-txt;
@@ -33,4 +34,14 @@
     font-weight: 500;
     font-size: 32px;
     padding: 20px;
+}
+
+@mixin la-note-enchantee {
+    background: #fcdfdb;
+    color: #3d1319;
+    & h1 {
+        font-family: 'Devonshire', cursive;
+        font-size: 24px;
+        margin: 5px;
+    }
 }

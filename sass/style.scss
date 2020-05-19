@@ -1,9 +1,11 @@
 @import "utils/variables.scss";
-@import 'utils/mixins.scss";
+@import "utils/mixins.scss";
 @import "base/base.scss";
-@import "components/icons.scss";
+@import "components/icon.scss";
 @import "components/button.scss";
+@import "components/lists.scss";
 @import "layouts/header.scss";
 @import "layouts/footer.scss";
-@import "pages/main.scss";
+@import "layouts/main.scss";
 @import "pages/cards.scss";
+@import "pages/menu1.scss";

@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -16,6 +20,10 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.fa-2x {
+  transform: translateY(15%);
 }
 
 button {
@@ -32,10 +40,15 @@ button {
   padding: 15px 65px;
 }
 
+.listes {
+  display: flex;
+}
+
 .header {
   height: 120px;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 1;
   background: #579e87;
   color: #fdcb49;
@@ -67,13 +80,18 @@ button {
   padding: 20px;
 }
 
-main {
+.main {
+  display: flex;
+}
+.main__index {
   height: 100vh;
   width: 100%;
-  display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+}
+.main__menu1 {
+  justify-content: center;
 }
 
 .card {
@@ -92,24 +110,30 @@ main {
 }
 .card__first h1 {
   font-family: "Devonshire", cursive;
+  font-size: 24px;
   margin: 5px;
 }
 .card__first h2 {
   font-family: "Kalam", cursive;
+  font-size: 30px;
   text-transform: uppercase;
 }
 .card__second h1 {
+  font-size: 24px;
+  margin: 0;
   background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 .card__second h2 {
+  font-size: 30px;
   color: #c77412;
 }
 .card__third h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 28px !important;
+  font-size: 28px;
+  margin: 0;
   background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -117,11 +141,13 @@ main {
 }
 .card__third h2 {
   font-family: "Kalam", cursive;
+  font-size: 30px;
   color: #0887fb;
 }
 .card__fourth h1 {
   font-family: "Kalam", cursive;
-  font-size: 26px !important;
+  font-size: 26px;
+  margin: 0;
   background: linear-gradient(to right, #41963c, #cefea0);
   -webkit-background-clip: text;
   background-clip: text;
@@ -129,14 +155,32 @@ main {
 }
 .card__fourth h2 {
   font-family: "Kalam", cursive;
+  font-size: 30px;
   color: #72bf56;
 }
-.card h1 {
-  font-size: 24px;
-  margin: 0;
+
+.la-note-enchantee {
+  background: #fcdfdb;
+  color: #3d1319;
+  font-family: "Kalam", cursive;
+  height: 593px;
+  width: 405px;
+  margin-top: 120px;
 }
-.card h2 {
-  font-size: 30px;
+.la-note-enchantee h1 {
+  font-family: "Devonshire", cursive;
+  font-size: 24px;
+  margin: 5px;
+}
+.la-note-enchantee header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.la-note-enchantee footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
