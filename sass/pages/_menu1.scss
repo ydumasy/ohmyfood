@@ -1,9 +1,6 @@
-.la-note-enchantee {
+.menu-1 {
     @include la-note-enchantee;
-    font-family: 'Kalam', cursive;
-    height: 593px;
-    width: 405px;
-    margin-top: 120px;
+    @include menu-size;
     &__icon{
         &--top {
             margin-top: 40px;

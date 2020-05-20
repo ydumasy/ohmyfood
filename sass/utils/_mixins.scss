@@ -37,6 +37,7 @@
 }
 
 @mixin la-note-enchantee {
+    font-family: 'Kalam', cursive;
     background: #fcdfdb;
     color: #3d1319;
     & h1 {
@@ -45,4 +46,10 @@
         margin-top: 5px;
         margin-bottom: 10px;
     }
+}
+
+@mixin menu-size {
+    height: 593px;
+    width: 405px;
+    margin-top: 122px;
 }

@@ -1,3 +1,16 @@
+.main-index {
+    height: 100vh;
+    width: 100%;
+    & ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
 .card {
     height: 382px;
     width: 270px;
@@ -14,9 +27,11 @@
             font-family: 'Kalam', cursive;
             font-size: 30px;
             text-transform: uppercase;
+            margin-top: 18px;
         }
     }
     &__second {
+        font-family: 'Times New Roman', Times, serif;
         & h1 {
             font-size: 24px;
             margin: 0;
