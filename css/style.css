@@ -40,8 +40,15 @@ button {
   padding: 15px 65px;
 }
 
-.listes {
+.list {
   display: flex;
+  justify-content: space-around;
+}
+.list__price {
+  font-weight: bold;
+}
+.list ul {
+  padding: 0;
 }
 
 .header {
@@ -103,6 +110,7 @@ button {
   align-items: center;
   box-shadow: 0px 0px 15px #d4d4d4;
   transform: translateY(-10%);
+  position: relative;
 }
 .card__first {
   background: #fcdfdb;
@@ -111,7 +119,8 @@ button {
 .card__first h1 {
   font-family: "Devonshire", cursive;
   font-size: 24px;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .card__first h2 {
   font-family: "Kalam", cursive;
@@ -158,6 +167,12 @@ button {
   font-size: 30px;
   color: #72bf56;
 }
+.card a {
+  display: inline-block;
+  position: absolute;
+  height: 382px;
+  width: 270px;
+}
 
 .la-note-enchantee {
   background: #fcdfdb;
@@ -170,7 +185,22 @@ button {
 .la-note-enchantee h1 {
   font-family: "Devonshire", cursive;
   font-size: 24px;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.la-note-enchantee__icon--top {
+  margin-top: 40px;
+}
+.la-note-enchantee__icon--bottom {
+  margin-right: 5px;
+}
+.la-note-enchantee__image--left {
+  float: left;
+  margin-left: 40px;
+}
+.la-note-enchantee__image--right {
+  float: right;
+  margin-right: 40px;
 }
 .la-note-enchantee header {
   display: flex;
@@ -181,6 +211,13 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 10px;
+}
+.la-note-enchantee h2 {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

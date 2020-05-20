@@ -1,3 +1,10 @@
-.listes {
+.list {
     display: flex;
+    justify-content: space-around;
+    &__price {
+        font-weight: bold;
+    }
+    & ul {
+        padding: 0;
+    }
 }
