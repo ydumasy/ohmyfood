@@ -1,0 +1,21 @@
+.image {
+    &__menu-1 {
+        &--left {
+            float: left;
+            margin-left: 40px;
+        }
+        &--right {
+            float: right;
+            margin-right: 40px;
+        }
+    }
+    &__menu-2 {
+        transform: translateY(-5%);
+        &--left {
+            float: left;
+        }
+        &--right {
+            float: right;
+        }
+    }
+}

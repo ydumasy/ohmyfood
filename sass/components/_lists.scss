@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     margin: 20px;
-    &__price {
-        font-weight: bold;
+    &--bold {
+            font-weight: bold;
     }
     & ul {
         padding: 0;

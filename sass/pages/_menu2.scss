@@ -3,9 +3,23 @@
     & h1 {
         font-size: 24px;
         text-align: center;
+        margin: 60px 0;
         background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+    }
+    & h2 {
+        text-align: center;
+        margin-top: 25px;
+    }
+    &__entrees {
+        color: #c77412;
+    }
+    &__plats {
+        color: #a56799;
+    }
+    &__desserts {
+        color: #6e4ccc;
     }
 }
