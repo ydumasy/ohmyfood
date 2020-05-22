@@ -21,7 +21,7 @@
     box-shadow: 0px 0px 15px #d4d4d4;
     transform: translateY(-10%);
     position: relative;
-    &__first {
+    &--1 {
         @include la-note-enchantee;
         & h2 {
             font-family: 'Kalam', cursive;
@@ -30,7 +30,7 @@
             margin-top: 18px;
         }
     }
-    &__second {
+    &--2 {
         font-family: 'Times New Roman', Times, serif;
         & h1 {
             font-size: 24px;
@@ -45,7 +45,7 @@
             color: #c77412;
         }
     }
-    &__third {
+    &--3 {
         & h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 28px;
@@ -61,7 +61,7 @@
             color: #0887fb;
         }
     }
-    &__fourth {
+    &--4 {
         & h1 {
             font-family: 'Kalam', cursive;
             font-size: 26px;

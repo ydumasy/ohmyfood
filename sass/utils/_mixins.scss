@@ -53,3 +53,21 @@
     width: 405px;
     margin-top: 122px;
 }
+
+@mixin lines {
+    border-bottom: 3px solid;
+    content: "";
+}
+
+@mixin line-left {
+    border-left: 10px solid;
+    width: 110px;
+    margin-left: 15px;
+    border-bottom-left-radius: 50%;
+}
+
+@mixin line-right {
+    width: 110px;
+    margin-right: 10px;
+    border-bottom-right-radius: 50%;
+}

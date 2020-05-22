@@ -1,0 +1,58 @@
+.menu-3 {
+    @include menu-size;
+    font-family: 'Kalam', cursive;
+    background: #edefef;
+    & h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 28px;
+        margin: 70px 0 50px 0;
+        text-align: center;
+        background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    &__subtitle {
+        font-size: 13px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &--1 {
+            &::before {
+                @include lines;
+                @include line-left;
+                color: #0228dd;
+            }
+            &::after {
+                @include lines;
+                @include line-right;
+                color: #0228dd;
+            }
+        }
+        &--2 {
+            &::before {
+                @include lines;
+                @include line-left;
+                color: #0670f3;
+            }
+            &::after {
+                @include lines;
+                @include line-right;
+                color: #0670f3;
+            }
+        }
+        &--3 {
+            &::before {
+                @include lines;
+                @include line-left;
+                color: #229df9;
+            }
+            &::after {
+                @include lines;
+                @include line-right;
+                color: #229df9;
+            }
+        }
+    }
+}

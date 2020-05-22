@@ -61,7 +61,7 @@ button {
 .list {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 0 20px 20px 20px;
 }
 .list--bold {
   font-weight: bold;
@@ -135,27 +135,27 @@ button {
   transform: translateY(-10%);
   position: relative;
 }
-.card__first {
+.card--1 {
   font-family: "Kalam", cursive;
   background: #fcdfdb;
   color: #3d1319;
 }
-.card__first h1 {
+.card--1 h1 {
   font-family: "Devonshire", cursive;
   font-size: 24px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.card__first h2 {
+.card--1 h2 {
   font-family: "Kalam", cursive;
   font-size: 30px;
   text-transform: uppercase;
   margin-top: 18px;
 }
-.card__second {
+.card--2 {
   font-family: "Times New Roman", Times, serif;
 }
-.card__second h1 {
+.card--2 h1 {
   font-size: 24px;
   margin: 0;
   background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
@@ -163,11 +163,11 @@ button {
   background-clip: text;
   color: transparent;
 }
-.card__second h2 {
+.card--2 h2 {
   font-size: 30px;
   color: #c77412;
 }
-.card__third h1 {
+.card--3 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 28px;
   margin: 0;
@@ -176,12 +176,12 @@ button {
   background-clip: text;
   color: transparent;
 }
-.card__third h2 {
+.card--3 h2 {
   font-family: "Kalam", cursive;
   font-size: 30px;
   color: #0887fb;
 }
-.card__fourth h1 {
+.card--4 h1 {
   font-family: "Kalam", cursive;
   font-size: 26px;
   margin: 0;
@@ -190,7 +190,7 @@ button {
   background-clip: text;
   color: transparent;
 }
-.card__fourth h2 {
+.card--4 h2 {
   font-family: "Kalam", cursive;
   font-size: 30px;
   color: #72bf56;
@@ -228,7 +228,7 @@ button {
   margin-bottom: 0;
 }
 .menu-1__icon--top {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .menu-1__icon--bottom {
   margin-right: 5px;
@@ -248,7 +248,7 @@ button {
 .menu-2 h1 {
   font-size: 24px;
   text-align: center;
-  margin: 60px 0;
+  margin: 80px 0 60px 0;
   background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
   -webkit-background-clip: text;
   background-clip: text;
@@ -256,7 +256,7 @@ button {
 }
 .menu-2 h2 {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 .menu-2__entrees {
   color: #c77412;
@@ -266,6 +266,82 @@ button {
 }
 .menu-2__desserts {
   color: #6e4ccc;
+}
+
+.menu-3 {
+  height: 593px;
+  width: 405px;
+  margin-top: 122px;
+  font-family: "Kalam", cursive;
+  background: #edefef;
+}
+.menu-3 h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  margin: 70px 0 50px 0;
+  text-align: center;
+  background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.menu-3__subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-3__subtitle--1::before {
+  border-bottom: 3px solid;
+  content: "";
+  border-left: 10px solid;
+  width: 110px;
+  margin-left: 15px;
+  border-bottom-left-radius: 50%;
+  color: #0228dd;
+}
+.menu-3__subtitle--1::after {
+  border-bottom: 3px solid;
+  content: "";
+  width: 110px;
+  margin-right: 10px;
+  border-bottom-right-radius: 50%;
+  color: #0228dd;
+}
+.menu-3__subtitle--2::before {
+  border-bottom: 3px solid;
+  content: "";
+  border-left: 10px solid;
+  width: 110px;
+  margin-left: 15px;
+  border-bottom-left-radius: 50%;
+  color: #0670f3;
+}
+.menu-3__subtitle--2::after {
+  border-bottom: 3px solid;
+  content: "";
+  width: 110px;
+  margin-right: 10px;
+  border-bottom-right-radius: 50%;
+  color: #0670f3;
+}
+.menu-3__subtitle--3::before {
+  border-bottom: 3px solid;
+  content: "";
+  border-left: 10px solid;
+  width: 110px;
+  margin-left: 15px;
+  border-bottom-left-radius: 50%;
+  color: #229df9;
+}
+.menu-3__subtitle--3::after {
+  border-bottom: 3px solid;
+  content: "";
+  width: 110px;
+  margin-right: 10px;
+  border-bottom-right-radius: 50%;
+  color: #229df9;
 }
 
 /*# sourceMappingURL=style.css.map */
