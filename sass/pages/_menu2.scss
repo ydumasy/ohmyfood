@@ -1,23 +1,28 @@
 .menu-2 {
     @include menu-size;
+    justify-content: center;
     & h1 {
         font-size: 24px;
         text-align: center;
-        margin: 80px 0 60px 0;
+        margin-bottom: 70px;
         background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
     }
-    & h2 {
-        text-align: center;
-        margin-top: 35px;
+    &__subtitle {
+        @include menu-subtitle;
+        & h2 {
+            margin: 0;
+        }
     }
     &__entrees {
         color: #c77412;
+        margin-bottom: 30px;
     }
     &__plats {
         color: #a56799;
+        margin-bottom: 30px;
     }
     &__desserts {
         color: #6e4ccc;

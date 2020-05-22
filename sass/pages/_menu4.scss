@@ -1,0 +1,27 @@
+.menu-4 {
+    @include menu-size;
+    justify-content: center;
+    font-family: 'Kalam', cursive;
+    & h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 35px;
+        background: linear-gradient(to right, #41963c, #cefea0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & h2 {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    & li {
+        font-size: 11px;
+    }
+}

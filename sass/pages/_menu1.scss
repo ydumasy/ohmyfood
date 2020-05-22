@@ -1,29 +1,23 @@
 .menu-1 {
     @include la-note-enchantee;
     @include menu-size;
+    justify-content: space-around;
     & header {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    & h2 {
-        font-size: 14px;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 0;
-    }
-    &__icon{
-        &--top {
-            margin-top: 30px;
-        }
-        &--bottom {
-            margin-right: 5px;
+    &__subtitle {
+        @include menu-subtitle;
+        & h2 {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0;
         }
     }
     & footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 10px;
     }
 }
