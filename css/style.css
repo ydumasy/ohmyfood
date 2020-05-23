@@ -195,6 +195,21 @@ button {
   width: 270px;
 }
 
+main {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 150px;
+}
+main h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+main p {
+  font-size: 14px;
+  text-align: justify;
+}
+
 .menu-1 {
   font-family: "Kalam", cursive;
   background: #fcdfdb;
