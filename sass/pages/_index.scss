@@ -42,14 +42,14 @@
             & h1 {
                 font-size: 24px;
                 margin: 0;
-                background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
+                background: linear-gradient(to right, $clr-menu2-entrees, $clr-menu2-plats, $clr-menu2-desserts);
                 -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
             }
             & h2 {
                 font-size: 30px;
-                color: #c77412;
+                color: $clr-menu2-entrees;
             }
         }
         &:hover div {

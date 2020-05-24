@@ -39,6 +39,17 @@ a {
     opacity: 1;
   }
 }
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  20%, 60% {
+    transform: rotate(-2deg);
+  }
+  40%, 80% {
+    transform: rotate(2deg);
+  }
+}
 .fa-music {
   background: linear-gradient(to right, #f05160, #f6916a);
   -webkit-background-clip: text;
@@ -74,13 +85,13 @@ a {
   margin: 0;
 }
 .button__points--1 {
-  animation: point-1 2000ms backwards infinite;
+  animation: point-1 2000ms infinite;
 }
 .button__points--2 {
-  animation: point-2 2000ms backwards infinite;
+  animation: point-2 2000ms infinite;
 }
 .button__points--3 {
-  animation: point-3 2000ms backwards infinite;
+  animation: point-3 2000ms infinite;
 }
 
 .image__menu-1--left {
@@ -112,14 +123,15 @@ a {
   top: 0;
   z-index: 1;
   background: #579e87;
-  color: #fdcb49;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.header__title {
-  margin: auto;
+.header h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 48px;
+  color: #fdcb49;
 }
 
 .footer {
@@ -139,6 +151,9 @@ a {
   font-weight: 500;
   font-size: 32px;
   padding: 20px;
+}
+.footer p:hover {
+  animation: wiggle 300ms;
 }
 
 .menus {
@@ -323,6 +338,24 @@ a {
   font-size: 14px;
   font-weight: 700;
   margin: 0;
+  position: relative;
+}
+.menu-1__subtitle h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-1__subtitle h2:hover::before {
+  transform: scaleX(1);
+}
+.menu-1__subtitle h2::before {
+  background: #3d1319;
+  height: 2px;
 }
 .menu-1 footer {
   display: flex;
@@ -354,17 +387,91 @@ a {
 }
 .menu-2__subtitle h2 {
   margin: 0;
+  position: relative;
+}
+.menu-2__subtitle h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-2__subtitle h2:hover::before {
+  transform: scaleX(1);
 }
 .menu-2__entrees {
   color: #c77412;
   margin-bottom: 30px;
 }
+.menu-2__entrees h2 {
+  position: relative;
+}
+.menu-2__entrees h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-2__entrees h2:hover::before {
+  transform: scaleX(1);
+}
+.menu-2__entrees h2::before {
+  background: #c77412;
+  height: 2px;
+}
 .menu-2__plats {
   color: #a56799;
   margin-bottom: 30px;
 }
+.menu-2__plats h2 {
+  position: relative;
+}
+.menu-2__plats h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-2__plats h2:hover::before {
+  transform: scaleX(1);
+}
+.menu-2__plats h2::before {
+  background: #a56799;
+  height: 2px;
+}
 .menu-2__desserts {
   color: #6e4ccc;
+}
+.menu-2__desserts h2 {
+  position: relative;
+}
+.menu-2__desserts h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-2__desserts h2:hover::before {
+  transform: scaleX(1);
+}
+.menu-2__desserts h2::before {
+  background: #6e4ccc;
+  height: 2px;
 }
 
 .menu-3 {
@@ -394,56 +501,107 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.menu-3__subtitle--1::before {
-  border-bottom: 3px solid;
-  content: "";
-  border-left: 10px solid;
-  width: 110px;
-  margin-left: 15px;
-  border-bottom-left-radius: 50%;
-  color: #0228dd;
+.menu-3__subtitle--1 {
+  position: relative;
 }
-.menu-3__subtitle--1::after {
-  border-bottom: 3px solid;
+.menu-3__subtitle--1::before {
   content: "";
-  width: 110px;
-  margin-right: 10px;
-  border-bottom-right-radius: 50%;
-  color: #0228dd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-3__subtitle--1:hover::before {
+  transform: scaleX(1);
+}
+.menu-3__subtitle--1::before {
+  background: #0228dd;
+  height: 2px;
+}
+.menu-3__subtitle--2 {
+  position: relative;
 }
 .menu-3__subtitle--2::before {
-  border-bottom: 3px solid;
   content: "";
-  border-left: 10px solid;
-  width: 110px;
-  margin-left: 15px;
-  border-bottom-left-radius: 50%;
-  color: #0670f3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
 }
-.menu-3__subtitle--2::after {
-  border-bottom: 3px solid;
-  content: "";
-  width: 110px;
-  margin-right: 10px;
-  border-bottom-right-radius: 50%;
-  color: #0670f3;
+.menu-3__subtitle--2:hover::before {
+  transform: scaleX(1);
+}
+.menu-3__subtitle--2::before {
+  background: #0670f3;
+  height: 2px;
+}
+.menu-3__subtitle--3 {
+  position: relative;
 }
 .menu-3__subtitle--3::before {
-  border-bottom: 3px solid;
   content: "";
-  border-left: 10px solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-3__subtitle--3:hover::before {
+  transform: scaleX(1);
+}
+.menu-3__subtitle--3::before {
+  background: #229df9;
+  height: 2px;
+}
+
+.line-left {
+  border-bottom: 3px solid;
+  border-left: 3px solid;
   width: 110px;
-  margin-left: 15px;
-  border-bottom-left-radius: 50%;
+  height: 5px;
+  margin-left: 20px;
+  border-bottom-left-radius: 10px;
+}
+.line-left--1 {
+  color: #0228dd;
+}
+.line-left--2 {
+  color: #0670f3;
+}
+.line-left--3 {
   color: #229df9;
 }
-.menu-3__subtitle--3::after {
+.line-left hr {
+  display: none;
+}
+
+.line-right {
   border-bottom: 3px solid;
-  content: "";
+  border-right: 3px solid;
   width: 110px;
-  margin-right: 10px;
-  border-bottom-right-radius: 50%;
+  height: 5px;
+  margin-right: 20px;
+  border-bottom-right-radius: 10px;
+}
+.line-right--1 {
+  color: #0228dd;
+}
+.line-right--2 {
+  color: #0670f3;
+}
+.line-right--3 {
   color: #229df9;
+}
+.line-right hr {
+  display: none;
 }
 
 .menu-4 {
@@ -473,6 +631,24 @@ a {
 .menu-4__subtitle h2 {
   font-size: 12px;
   font-weight: 400;
+  position: relative;
+}
+.menu-4__subtitle h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms;
+}
+.menu-4__subtitle h2:hover::before {
+  transform: scaleX(1);
+}
+.menu-4__subtitle h2::before {
+  background: #000;
+  height: 1px;
 }
 .menu-4 li {
   font-size: 11px;

@@ -5,15 +5,16 @@
     top: 0;
     z-index: 1;
     background: $clr-header;
-    color: $clr-header-txt;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin header-title {
-    margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 48px;
+    color: $clr-header-txt;
 }
 
 @mixin footer {
@@ -39,7 +40,7 @@
 @mixin la-note-enchantee {
     font-family: 'Kalam', cursive;
     background: #fcdfdb;
-    color: $clr-menu-1;
+    color: $clr-menu1;
     & h1 {
         font-family: 'Devonshire', cursive;
         font-size: 24px;
@@ -62,22 +63,22 @@
     justify-content: space-between;
 }
 
-@mixin lines {
-    border-bottom: 3px solid;
-    content: "";
-}
-
 @mixin line-left {
-    border-left: 10px solid;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
     width: 110px;
-    margin-left: 15px;
-    border-bottom-left-radius: 50%;
+    height: 5px;
+    margin-left: 20px;
+    border-bottom-left-radius: 10px;
 }
 
 @mixin line-right {
+    border-bottom: 3px solid;
+    border-right: 3px solid;
     width: 110px;
-    margin-right: 10px;
-    border-bottom-right-radius: 50%;
+    height: 5px;
+    margin-right: 20px;
+    border-bottom-right-radius: 10px;
 }
 
 @mixin proprietes-div-animees {
@@ -90,4 +91,21 @@
 @mixin animation-menus {
     transform: scale(1.15);
     opacity: .85;
+}
+
+@mixin underline-animation {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 300ms;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+    }
 }
