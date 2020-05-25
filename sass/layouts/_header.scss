@@ -4,3 +4,12 @@
         @include header-title;
     }
 }
+
+@media screen and (max-height: map-get($breakpoints, height)){
+.header {
+    height: 70px;
+    &__title {
+        font-size: 28px;
+    }
+}
+}

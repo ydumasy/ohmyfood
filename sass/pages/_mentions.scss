@@ -1,6 +1,7 @@
 .main-mentions {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 150px;
+    margin-bottom: 100px;
     & h1 {
         font-size: 36px;
         font-weight: 700;
@@ -11,4 +12,11 @@
         font-size: 14px;
         text-align: justify;
     }
+}
+
+@media screen and (max-height: map-get($breakpoints, height)){
+.main-mentions {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
 }
