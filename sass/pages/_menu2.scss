@@ -5,7 +5,7 @@
         font-size: 24px;
         text-align: center;
         margin-bottom: 70px;
-        background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
+        background: linear-gradient(to right, $clr-menu2-entrees, $clr-menu2-plats, $clr-menu2-desserts);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -14,17 +14,39 @@
         @include menu-subtitle;
         & h2 {
             margin: 0;
+            @include underline-animation;
         }
     }
     &__entrees {
-        color: #c77412;
+        color: $clr-menu2-entrees;
         margin-bottom: 30px;
+        & h2 {
+            @include underline-animation;
+            &::before {
+                background: $clr-menu2-entrees;
+                height: 2px;
+            }
+        }
     }
     &__plats {
-        color: #a56799;
+        color: $clr-menu2-plats;
         margin-bottom: 30px;
+        & h2 {
+            @include underline-animation;
+            &::before {
+                background: $clr-menu2-plats;
+                height: 2px;
+            }
+        }
     }
     &__desserts {
-        color: #6e4ccc;
+        color: $clr-menu2-desserts;
+        & h2 {
+            @include underline-animation;
+            &::before {
+                background: $clr-menu2-desserts;
+                height: 2px;
+            }
+        }
     }
 }

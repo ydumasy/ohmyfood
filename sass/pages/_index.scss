@@ -17,64 +17,87 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     box-shadow: 0px 0px 15px #d4d4d4;
     transform: translateY(-10%);
     position: relative;
     &--1 {
         @include la-note-enchantee;
-        & h2 {
-            font-family: 'Kalam', cursive;
-            font-size: 30px;
-            text-transform: uppercase;
-            margin-top: 18px;
+        & div {
+            @include proprietes-div-animees;
+            & h2 {
+                font-family: 'Kalam', cursive;
+                font-size: 30px;
+                text-transform: uppercase;
+                margin-top: 18px;
+            }
+        }
+        &:hover div {
+            @include animation-menus;
         }
     }
     &--2 {
         font-family: 'Times New Roman', Times, serif;
-        & h1 {
-            font-size: 24px;
-            margin: 0;
-            background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        & div {
+            @include proprietes-div-animees;
+            & h1 {
+                font-size: 24px;
+                margin: 0;
+                background: linear-gradient(to right, $clr-menu2-entrees, $clr-menu2-plats, $clr-menu2-desserts);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            & h2 {
+                font-size: 30px;
+                color: $clr-menu2-entrees;
+            }
         }
-        & h2 {
-            font-size: 30px;
-            color: #c77412;
+        &:hover div {
+            @include animation-menus;
         }
     }
     &--3 {
-        & h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 28px;
-            margin: 0;
-            background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        & div {
+            @include proprietes-div-animees;
+            & h1 {
+                font-family: 'Dancing Script', cursive;
+                font-size: 28px;
+                margin: 0;
+                background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            & h2 {
+                font-family: 'Kalam', cursive;
+                font-size: 30px;
+                color: #0887fb;
+            }
         }
-        & h2 {
-            font-family: 'Kalam', cursive;
-            font-size: 30px;
-            color: #0887fb;
+        &:hover div {
+            @include animation-menus;
         }
     }
     &--4 {
-        & h1 {
-            font-family: 'Kalam', cursive;
-            font-size: 26px;
-            margin: 0;
-            background: linear-gradient(to right, #41963c, #cefea0);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        & div {
+            @include proprietes-div-animees;
+            & h1 {
+                font-family: 'Kalam', cursive;
+                font-size: 26px;
+                margin: 0;
+                background: linear-gradient(to right, #41963c, #cefea0);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            & h2 {
+                font-family: 'Kalam', cursive;
+                font-size: 30px;
+                color: #72bf56;
+            }
         }
-        & h2 {
-            font-family: 'Kalam', cursive;
-            font-size: 30px;
-            color: #72bf56;
+        &:hover div {
+            @include animation-menus;
         }
     }
     & a {
@@ -82,5 +105,6 @@
         position: absolute;
         height: 382px;
         width: 270px;
+        z-index: 1;
     }
 }

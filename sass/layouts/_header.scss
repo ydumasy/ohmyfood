@@ -1,6 +1,6 @@
 .header {
     @include header;
-    &__title {
+    & h1 {
         @include header-title;
     }
 }

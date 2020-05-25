@@ -13,6 +13,11 @@
             font-size: 14px;
             font-weight: 700;
             margin: 0;
+            @include underline-animation;
+            &::before {
+                background: $clr-menu1;
+                height: 2px;
+            }
         }
     }
     & footer {

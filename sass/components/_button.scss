@@ -1,13 +1,27 @@
-button {
+.button {
     position: absolute;
     bottom: 15vh;
     left: 50vw;
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
     border: none;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
     background: $clr-header;
     color: $clr-header-txt;
     padding: 15px 65px;
+    &__text {
+        font-size: 36px;
+        margin: 0 10px 0 0;
+    }
+    &__points {
+        font-size: 36px;
+        margin: 0;
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation: point-#{$i} 2000ms infinite;
+            }
+        }
+    }
 }

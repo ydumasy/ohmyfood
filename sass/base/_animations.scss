@@ -1,0 +1,38 @@
+@keyframes point-1 {
+    0%, 25% {
+        opacity: 0;
+    }
+    30%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes point-2 {
+    0%, 50% {
+        opacity: 0;
+    }
+    55%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes point-3 {
+    0%, 75% {
+        opacity : 0;
+    }
+    80%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20%, 60% {
+        transform: rotate(-2deg);
+    }
+    40%, 80% {
+        transform: rotate(2deg);
+    }
+}

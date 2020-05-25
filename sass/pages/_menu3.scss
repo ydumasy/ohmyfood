@@ -3,12 +3,13 @@
     font-family: 'Kalam', cursive;
     background: #edefef;
     justify-content: center;
+    
     & h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 36px;
         margin-bottom: 35px;
         text-align: center;
-        background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+        background: linear-gradient(to right, $clr-menu3-entrees, $clr-menu3-plats, $clr-menu3-desserts);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -20,40 +21,57 @@
         justify-content: space-between;
         align-items: center;
         &--1 {
+            @include underline-animation;
             &::before {
-                @include lines;
-                @include line-left;
-                color: #0228dd;
-            }
-            &::after {
-                @include lines;
-                @include line-right;
-                color: #0228dd;
+                background: $clr-menu3-entrees;
+                height: 2px;
             }
         }
         &--2 {
+            @include underline-animation;
             &::before {
-                @include lines;
-                @include line-left;
-                color: #0670f3;
-            }
-            &::after {
-                @include lines;
-                @include line-right;
-                color: #0670f3;
+                background: $clr-menu3-plats;
+                height: 2px;
             }
         }
         &--3 {
+            @include underline-animation;
             &::before {
-                @include lines;
-                @include line-left;
-                color: #229df9;
-            }
-            &::after {
-                @include lines;
-                @include line-right;
-                color: #229df9;
+                background: $clr-menu3-desserts;
+                height: 2px;
             }
         }
+    }
+}
+
+.line-left {
+    @include line-left;
+    &--1 {
+        color: $clr-menu3-entrees;
+    }
+    &--2 {
+        color: $clr-menu3-plats;
+    }
+    &--3 {
+        color: $clr-menu3-desserts;
+    }
+    & hr {
+        display: none;
+    }
+}
+
+.line-right {
+    @include line-right;
+    &--1 {
+        color: $clr-menu3-entrees;
+    }
+    &--2 {
+        color: $clr-menu3-plats;
+    }
+    &--3 {
+        color: $clr-menu3-desserts;
+    }
+    & hr {
+        display: none;
     }
 }
