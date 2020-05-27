@@ -14,7 +14,7 @@
     }
 }
 
-@media screen and (max-height: map-get($breakpoints, height)){
+@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, mobile)) {
 .main-mentions {
     margin-top: 100px;
     margin-bottom: 70px;

@@ -90,7 +90,7 @@ a {
   animation: point-3 2000ms infinite;
 }
 
-@media screen and (max-height: 733px) {
+@media (max-height: 733px), (max-width: 633px) {
   .button__text {
     font-size: 20px;
   }
@@ -138,7 +138,7 @@ a {
   color: #fdcb49;
 }
 
-@media screen and (max-height: 733px) {
+@media (max-height: 733px), (max-width: 633px) {
   .header {
     height: 70px;
   }
@@ -168,7 +168,7 @@ a {
   animation: wiggle 300ms;
 }
 
-@media screen and (max-height: 733px) {
+@media (max-height: 733px), (max-width: 633px) {
   .footer {
     height: 40px;
   }
@@ -177,15 +177,18 @@ a {
   }
 }
 .menus {
+  height: calc(100vh - 190px);
   width: 100%;
   margin-top: 120px;
   margin-bottom: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-@media screen and (max-height: 733px) {
+@media (max-height: 733px), (max-width: 633px) {
   .menus {
+    height: calc(100vh - 120px);
     margin-top: 70px;
     margin-bottom: 40px;
   }
@@ -327,21 +330,30 @@ a {
   z-index: 1;
 }
 
-@media screen and (max-height: 733px) {
+@media (max-height: 733px), (max-width: 633px) {
   .card {
     height: 354px;
     width: 250px;
   }
 }
-@media screen and (max-width: 1128px) {
+@media (max-width: 1128px) {
   .main-index {
     height: auto;
     margin-top: 170px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
   }
   .main-index ul {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 40px;
+  }
+}
+@media (max-width: 633px) {
+  .main-index {
+    margin-top: 120px;
+    margin-bottom: 70px;
+  }
+  .main-index ul {
+    grid-template-columns: 1fr;
   }
 }
 .main-mentions {
@@ -360,7 +372,7 @@ a {
   text-align: justify;
 }
 
-@media screen and (max-height: 733px) {
+@media (max-height: 733px), (max-width: 633px) {
   .main-mentions {
     margin-top: 100px;
     margin-bottom: 70px;

@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (max-height: map-get($breakpoints, height)){
+@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, mobile)) {
 .button {
     &__text {
         font-size: 20px;

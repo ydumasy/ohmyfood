@@ -8,7 +8,7 @@
     }
 }
 
-@media screen and (max-height: map-get($breakpoints, height)){
+@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, mobile)) {
 .footer {
     height: 40px;
     & p {
