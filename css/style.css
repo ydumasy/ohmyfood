@@ -203,9 +203,9 @@ a {
 .main-index ul {
   width: 100%;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   align-items: center;
 }
 
@@ -244,7 +244,7 @@ a {
 }
 .card--1:hover div {
   transform: scale(1.15);
-  opacity: 0.85;
+  opacity: 0.6;
 }
 .card--2 {
   font-family: "Times New Roman", Times, serif;
@@ -269,7 +269,7 @@ a {
 }
 .card--2:hover div {
   transform: scale(1.15);
-  opacity: 0.85;
+  opacity: 0.6;
 }
 .card--3 div {
   display: flex;
@@ -293,7 +293,7 @@ a {
 }
 .card--3:hover div {
   transform: scale(1.15);
-  opacity: 0.85;
+  opacity: 0.6;
 }
 .card--4 div {
   display: flex;
@@ -317,7 +317,7 @@ a {
 }
 .card--4:hover div {
   transform: scale(1.15);
-  opacity: 0.85;
+  opacity: 0.6;
 }
 .card a {
   display: inline-block;
@@ -331,6 +331,17 @@ a {
   .card {
     height: 354px;
     width: 250px;
+  }
+}
+@media screen and (max-width: 1128px) {
+  .main-index {
+    height: auto;
+    margin-top: 170px;
+    margin-bottom: 90px;
+  }
+  .main-index ul {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
   }
 }
 .main-mentions {

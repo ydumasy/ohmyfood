@@ -10,9 +10,9 @@
     & ul {
         width: 100%;
         padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
         align-items: center;
     }
 }
@@ -119,5 +119,17 @@
 .card {
     height: 354px;
     width: 250px;
+}
+}
+
+@media screen and (max-width: map-get($breakpoints, tablette)){
+.main-index{
+    height: auto;
+    margin-top: 170px;
+    margin-bottom: 90px;
+    & ul {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 40px;
+    }    
 }
 }
