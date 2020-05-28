@@ -131,7 +131,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.header h1 {
+.header h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -188,7 +188,7 @@ a {
 
 @media (max-height: 733px), (max-width: 633px) {
   .menus {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 110px);
     margin-top: 70px;
     margin-bottom: 40px;
   }
@@ -227,12 +227,6 @@ a {
   background: #fcdfdb;
   color: #3d1319;
 }
-.card--1 h1 {
-  font-family: "Devonshire", cursive;
-  font-size: 24px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
 .card--1 div {
   display: flex;
   flex-direction: column;
@@ -240,6 +234,12 @@ a {
   transition: all 0.5s;
 }
 .card--1 div h2 {
+  font-family: "Devonshire", cursive;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.card--1 div h3 {
   font-family: "Kalam", cursive;
   font-size: 30px;
   text-transform: uppercase;
@@ -258,7 +258,7 @@ a {
   align-items: center;
   transition: all 0.5s;
 }
-.card--2 div h1 {
+.card--2 div h2 {
   font-size: 24px;
   margin: 0;
   background: linear-gradient(to right, #c77412, #a56799, #6e4ccc);
@@ -266,7 +266,7 @@ a {
   background-clip: text;
   color: transparent;
 }
-.card--2 div h2 {
+.card--2 div h3 {
   font-size: 30px;
   color: #c77412;
 }
@@ -280,7 +280,7 @@ a {
   align-items: center;
   transition: all 0.5s;
 }
-.card--3 div h1 {
+.card--3 div h2 {
   font-family: "Dancing Script", cursive;
   font-size: 28px;
   margin: 0;
@@ -289,7 +289,7 @@ a {
   background-clip: text;
   color: transparent;
 }
-.card--3 div h2 {
+.card--3 div h3 {
   font-family: "Kalam", cursive;
   font-size: 30px;
   color: #0887fb;
@@ -304,7 +304,7 @@ a {
   align-items: center;
   transition: all 0.5s;
 }
-.card--4 div h1 {
+.card--4 div h2 {
   font-family: "Kalam", cursive;
   font-size: 26px;
   margin: 0;
@@ -313,7 +313,7 @@ a {
   background-clip: text;
   color: transparent;
 }
-.card--4 div h2 {
+.card--4 div h3 {
   font-family: "Kalam", cursive;
   font-size: 30px;
   color: #72bf56;
@@ -382,7 +382,7 @@ a {
   font-family: "Kalam", cursive;
   background: #fcdfdb;
   color: #3d1319;
-  height: 593px;
+  height: 100%;
   width: 405px;
   display: flex;
   flex-direction: column;
@@ -434,7 +434,7 @@ a {
 }
 
 .menu-2 {
-  height: 593px;
+  height: 100%;
   width: 405px;
   display: flex;
   flex-direction: column;
@@ -544,7 +544,7 @@ a {
 }
 
 .menu-3 {
-  height: 593px;
+  height: 100%;
   width: 405px;
   display: flex;
   flex-direction: column;
@@ -673,7 +673,7 @@ a {
 }
 
 .menu-4 {
-  height: 593px;
+  height: 100%;
   width: 405px;
   display: flex;
   flex-direction: column;

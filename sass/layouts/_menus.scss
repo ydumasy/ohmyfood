@@ -10,7 +10,7 @@
 
 @media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, mobile)) {
 .menus {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 110px);
     margin-top: 70px;
     margin-bottom: 40px;
 }
