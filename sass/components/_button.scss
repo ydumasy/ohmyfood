@@ -16,7 +16,7 @@
         margin: 0;
         @for $i from 1 through 3 {
             &--#{$i} {
-                animation: point-#{$i} 2000ms infinite;
+                animation: point-#{$i} 2s infinite;
             }
         }
     }

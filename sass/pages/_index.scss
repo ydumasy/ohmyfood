@@ -55,7 +55,6 @@
                 font-size: 24px;
                 margin: 0;
                 background: linear-gradient(to right, $clr-menu2-entrees, $clr-menu2-plats, $clr-menu2-desserts);
-                -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
             }
@@ -76,7 +75,6 @@
                 font-size: 28px;
                 margin: 0;
                 background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
-                -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
             }
@@ -98,7 +96,6 @@
                 font-size: 26px;
                 margin: 0;
                 background: linear-gradient(to right, #41963c, #cefea0);
-                -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
             }
