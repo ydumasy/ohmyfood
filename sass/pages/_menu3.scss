@@ -1,9 +1,7 @@
 .menu-3 {
     @include menu-size;
     font-family: 'Kalam', cursive;
-    background: #edefef;
-    justify-content: center;
-    
+    background: #edefef; 
     & h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 36px;
@@ -14,11 +12,9 @@
         color: transparent;
     }
     &__subtitle {
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 400;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include menu-subtitle;
         &--1 {
             @include underline-animation;
             &::before {
@@ -40,6 +36,9 @@
                 height: 2px;
             }
         }
+    }
+    &__list {
+        @include list-size;
     }
 }
 

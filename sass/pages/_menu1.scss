@@ -1,24 +1,25 @@
 .menu-1 {
     @include la-note-enchantee;
     @include menu-size;
-    justify-content: space-around;
     & h1 {
         font-family: 'Devonshire', cursive;
         font-size: 24px;
         margin-top: 5px;
         margin-bottom: 10px;
     }
-    & header {
+    &__header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        & i {
+            margin-top: 15px;
+        }
     }
     &__subtitle {
         @include menu-subtitle;
         & h2 {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 700;
-            margin: 0;
             @include underline-animation;
             &::before {
                 background: $clr-menu1;
@@ -26,7 +27,11 @@
             }
         }
     }
-    & footer {
+    &__list {
+        @include list-size;
+    }
+    &__footer {
+        margin-top: 30px;
         display: flex;
         flex-direction: row;
         justify-content: center;

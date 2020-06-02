@@ -1,6 +1,5 @@
 .menu-4 {
     @include menu-size;
-    justify-content: center;
     font-family: 'Kalam', cursive;
     & h1 {
         font-size: 36px;
@@ -11,12 +10,9 @@
         color: transparent;
     }
     &__subtitle {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include menu-subtitle;
         & h2 {
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 400;
             @include underline-animation;
             &::before {
@@ -25,7 +21,8 @@
             }
         }
     }
-    & li {
-        font-size: 11px;
+    &__list {
+        @include list-size;
+        font-size: 12px;
     }
 }

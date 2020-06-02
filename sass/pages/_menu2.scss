@@ -1,10 +1,9 @@
 .menu-2 {
     @include menu-size;
-    justify-content: center;
     & h1 {
         font-size: 24px;
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         background: linear-gradient(to right, $clr-menu2-entrees, $clr-menu2-plats, $clr-menu2-desserts);
         background-clip: text;
         color: transparent;
@@ -12,13 +11,13 @@
     &__subtitle {
         @include menu-subtitle;
         & h2 {
-            margin: 0;
+            height: 20px;
             @include underline-animation;
         }
     }
     &__entrees {
         color: $clr-menu2-entrees;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         & h2 {
             @include underline-animation;
             &::before {
@@ -29,7 +28,7 @@
     }
     &__plats {
         color: $clr-menu2-plats;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         & h2 {
             @include underline-animation;
             &::before {
@@ -40,6 +39,7 @@
     }
     &__desserts {
         color: $clr-menu2-desserts;
+        margin-bottom: 10px;
         & h2 {
             @include underline-animation;
             &::before {
@@ -47,5 +47,8 @@
                 height: 2px;
             }
         }
+    }
+    &__list {
+        @include list-size;
     }
 }

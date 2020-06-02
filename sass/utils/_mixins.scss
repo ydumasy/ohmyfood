@@ -45,15 +45,36 @@
 
 @mixin menu-size {
     height: 100%;
-    width: 405px;
+    width: 450px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 @mixin menu-subtitle {
+    margin-top: 30px;
+    margin-bottom: 15px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    & h2 {
+        margin: 0;
+    }
+}
+
+@mixin list-size {
+    margin: 0 20px;
+    padding: 0;
+    &--item {
+        display: flex;
+        justify-content: space-between;
+        & span:first-child {
+            margin-right: 10px;
+        }
+    }
+    &--bold {
+        font-weight: bold;
+    }
 }
 
 @mixin line-left {
