@@ -18,12 +18,11 @@
     &__subtitle {
         @include menu-subtitle;
         & h2 {
-            font-size: 15px;
             font-weight: 700;
+            font-size: 15px;
             @include underline-animation;
             &::before {
                 background: $clr-menu1;
-                height: 2px;
             }
         }
     }

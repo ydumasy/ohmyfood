@@ -11,7 +11,8 @@
     &__subtitle {
         @include menu-subtitle;
         & h2 {
-            height: 20px;
+            height: 22px;
+            font-size: 14px;
             @include underline-animation;
         }
     }
@@ -22,7 +23,6 @@
             @include underline-animation;
             &::before {
                 background: $clr-menu2-entrees;
-                height: 2px;
             }
         }
     }
@@ -33,7 +33,6 @@
             @include underline-animation;
             &::before {
                 background: $clr-menu2-plats;
-                height: 2px;
             }
         }
     }
@@ -44,7 +43,6 @@
             @include underline-animation;
             &::before {
                 background: $clr-menu2-desserts;
-                height: 2px;
             }
         }
     }

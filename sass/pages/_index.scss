@@ -118,14 +118,14 @@
     }
 }
 
-@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, mobile)) {
+@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, small)) {
 .card {
     height: 354px;
     width: 250px;
 }
 }
 
-@media (max-width: map-get($breakpoints, tablette)) {
+@media (max-width: map-get($breakpoints, medium)) {
 .main-index{
     height: auto;
     margin-top: 170px;
@@ -137,12 +137,67 @@
 }
 }
 
-@media (max-width: map-get($breakpoints, mobile)) {
+@media (max-width: map-get($breakpoints, small)) {
 .main-index {
     margin-top: 120px;
     margin-bottom: 70px;
     & ul {
         grid-template-columns: 1fr;
     }
+}
+.card {
+    @for $i from 1 through 4 {
+        &--#{$i} {
+            &:hover div {
+                transform: none;
+                opacity: 1;
+            }
+        }
+    }
+}
+}
+
+@media (max-width: map-get($breakpoints, xs)) {
+.card {
+    &--1 {
+        & div {
+            & h2 {
+                font-size: 20px;
+            }
+            & h3 {
+                font-size: 26px;
+            }
+        }
+    }
+    &--2 {
+        & div {
+            & h2 {
+                font-size: 20px;
+            }
+            & h3 {
+                font-size: 26px;
+            }
+        }
+    }
+    &--3 {
+        & div {
+            & h2 {
+                font-size: 24px;
+            }
+            & h3 {
+                font-size: 26px;
+            }
+        }
+    }
+    &--4 {
+        & div {
+            & h2 {
+                font-size: 22px;
+            }
+            & h3 {
+                font-size: 26px;
+            }
+        }
+    } 
 }
 }

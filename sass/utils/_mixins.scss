@@ -111,6 +111,7 @@
     position: relative;
     &::before {
         content: '';
+        height: 2px;
         position: absolute;
         bottom: 0;
         left: 0;

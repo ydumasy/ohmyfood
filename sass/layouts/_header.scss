@@ -5,7 +5,7 @@
     }
 }
 
-@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, mobile)) {
+@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, small)) {
 .header {
     height: 70px;
     &__title {

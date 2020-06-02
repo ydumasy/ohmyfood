@@ -11,3 +11,22 @@
         transform: translateY(-5%);
     }
 }
+
+@media (max-width: map-get($breakpoints, xs)) {
+.image {
+    &__menu-1 {
+        &--left {
+            width: 67px;
+        }
+        &--right {
+            width: 67px;
+        }
+    }
+    &__menu-2 {
+        width: 80px;
+    }
+    &__menu-4 {
+        width: 80px;
+    }
+}  
+}

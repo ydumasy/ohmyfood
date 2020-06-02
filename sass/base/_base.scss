@@ -14,3 +14,11 @@ ul {
 a {
     text-decoration: none;
 }
+
+@media (max-width: map-get($breakpoints, small)) {
+h2 {
+    &::before {
+            display: none;
+    }
+}   
+}

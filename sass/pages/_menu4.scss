@@ -12,7 +12,7 @@
     &__subtitle {
         @include menu-subtitle;
         & h2 {
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 400;
             @include underline-animation;
             &::before {
@@ -23,6 +23,5 @@
     }
     &__list {
         @include list-size;
-        font-size: 12px;
     }
 }

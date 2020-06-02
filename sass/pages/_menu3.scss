@@ -12,28 +12,25 @@
         color: transparent;
     }
     &__subtitle {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 400;
         @include menu-subtitle;
         &--1 {
             @include underline-animation;
             &::before {
                 background: $clr-menu3-entrees;
-                height: 2px;
             }
         }
         &--2 {
             @include underline-animation;
             &::before {
                 background: $clr-menu3-plats;
-                height: 2px;
             }
         }
         &--3 {
             @include underline-animation;
             &::before {
                 background: $clr-menu3-desserts;
-                height: 2px;
             }
         }
     }
@@ -72,4 +69,13 @@
     & hr {
         display: none;
     }
+}
+
+@media (max-width: map-get($breakpoints, xs)) {
+.line-right {
+    width: 73px;
+}
+.line-left {
+    width: 73px;
+}
 }

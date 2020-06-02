@@ -22,7 +22,7 @@
     }
 }
 
-@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, mobile)) {
+@media (max-height: map-get($breakpoints, height)), (max-width: map-get($breakpoints, small)) {
 .button {
     padding: 10px 30px;
     &__text {
