@@ -37,6 +37,9 @@
     &__list {
         @include list-size;
     }
+    & ul:last-child {
+        margin-bottom: 10px;
+    }
 }
 
 .line-left {
