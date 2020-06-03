@@ -12,7 +12,7 @@
         margin: 0 10px 0 0;
     }
     &__points {
-        font-size: 36px;
+        font-size: 32px;
         margin: 0;
         @for $i from 1 through 3 {
             &--#{$i} {
